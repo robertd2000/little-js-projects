@@ -1,0 +1,57 @@
+.container {
+  margin: 10px auto;
+  max-width: 850px;
+  color: #555555;
+}
+
+.quote {
+  margin: 10px auto;
+}
+
+.quote a {
+  color: #468cc8;
+  text-decoration: none;
+}
+
+.quote__inner {
+  margin: 15px 20px;
+  padding: 20px 25px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.quote_body {
+  text-align: left;
+  font-size: 36px;
+}
+
+.author {
+  margin: 10px auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.quote_pannel {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.random_quote {
+  margin-top: 30px;
+  background-color: #468cc8;
+  color: #f5f5f5;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.tags {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tag {
+  text-decoration: none;
+  color: #468cc8;
+}
