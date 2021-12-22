@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Poiret One", cursive;
+  overflow: hidden;
+  background: conic-gradient(
+    from 90deg at 25% -10%,
+    #8400ff,
+    #6613eb,
+    #1570e7,
+    #04cece,
+    #48caf1
+  );
+}
+
+.container {
+  height: 100vh;
+}
+
+.container_inner {
+  margin: 0 auto;
+  min-width: 600px;
+  width: 40%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.clear {
+  font-size: 2.5rem;
+  color: #6613eb;
+  cursor: pointer;
+}
+
+.input_inner {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  border-bottom: 3px solid black;
+}
+
+.list {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  width: 75%;
+}
