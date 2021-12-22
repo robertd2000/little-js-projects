@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Калькулятор чаевых</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator_inner">
+            <div class="calculator">
+                <div class="title">Калькулятор чаевых</div>
+                <hr>
+                <div class="input_inner">
+                    <p>Счет</p>
+                    <input id="bill" type="number" name="bill">
+                </div>
+                <div class="input_inner">
+                    <p>Количество гостей</p>
+                    <input id="guests" type="number" name="guests">
+                </div>
+                <div class="input_inner">
+                    <p>Качество сервиса</p>
+                    <select name="quality" id="quality">
+                        <option disabled selected value="0">Выберите...</option>
+                        <option value="0.3">30% - Превосходный</option>
+                        <option value="0.2">20% - Хороший</option>
+                        <option value="0.15">15% - Нормальный</option>
+                        <option value="0.1">10% - Плохой</option>
+                        <option value="0.05">5% - Ужасный</option>
+                    </select>
+                </div>
+                <hr>
+                <button class="calculate">Рассчитать</button>
+            </div>
+        </div>
+        <div id="tip-amount"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
