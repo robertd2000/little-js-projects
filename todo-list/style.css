@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: "Poiret One", cursive;
+  overflow: hidden;
+  background: conic-gradient(
+    from 90deg at 25% -10%,
+    #8400ff,
+    #6613eb,
+    #1570e7,
+    #04cece,
+    #48caf1
+  );
+}
+
+header {
+  margin-top: 60px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.user_input-inner {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.user_input {
+  display: block;
+  margin: 0;
+  padding: var(--inputPaddingV) var(--inputPaddingH);
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.2rem;
+  transition: box-shadow var(--transitionDuration);
+  font-size: 1.5rem;
+}
+
+.submit {
+  background-color: inherit;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.item {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+}
+
+.item p {
+  width: 80%;
+  color: black;
+}
+
+.item i {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.item.checked {
+  background-color: rgb(29, 248, 48);
+}
+
+.item.checked i,
+p {
+  color: #fff;
+}
