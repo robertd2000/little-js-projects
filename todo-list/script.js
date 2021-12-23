@@ -5,7 +5,6 @@ let list = document.querySelector('.list'),
 const todoList =JSON.parse(localStorage.getItem('todo-list'))  || []
 
 const loadTodos = () => {
-    console.log(todoList);
     todoList && todoList.forEach((item) => {
         let todoItem = createItem(item)
         list.append(todoItem)
@@ -24,7 +23,6 @@ const createItem = (text) => {
     deleteBtn.addEventListener('click', () => deleteItem(item))
     check.addEventListener('click', () => checkHandler(item))
     item.append(check, p, deleteBtn)
-    console.log(item);
     return item
 }
 
@@ -36,7 +34,6 @@ const addItem = (text) => {
         saveToLs(todoList)
         userInput.value = ''
     }
-    console.log(todoList);
 }
 
 const saveToLs = (list) => {
@@ -50,7 +47,6 @@ const deleteItem = (item) => {
         }
     })
     saveToLs(todoList)
-    console.log(item.children[1].textContent);
     item.remove()
 }
 
