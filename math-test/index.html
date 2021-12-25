@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MATH 4 KIDS</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h2 class="title"> <span><i class="fa fa-trophy" aria-hidden="true"></i></span>MATH 4 KIDS</h2>
+                <nav>
+                    <ul class="options">
+                        <li class="active" data-operator="+">Add</li>
+                        <li data-operator="-">Subtract</li>
+                        <li data-operator="*">Multiply</li>
+                        <li data-operator="/">Divide</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrapper">
+            <div class="equation">
+                <i id="true">✔</i>
+                <i id="false">✖</i>
+                <h2 id="num1"></h2>
+                <h2 id="op"></h2>
+                <h2 id="num2"></h2>
+                <h2 id="equal"></h2>
+                <h2 id="ques"></h2>
+            </div>
+            <div class="answer-options">
+                <div class="option"></div>
+                <div class="option"></div>
+                <div class="option"></div>
+            </div>
+        </div>
+
+        <div class="score">
+                <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> <span id="score"> Score: 0</span></h2>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
