@@ -1,4 +1,5 @@
 let cardsDom = document.querySelector('.cards')
+let loader = document.querySelector('.loader')
 
 const itemsList = [
     {
@@ -74,6 +75,18 @@ const itemsList = [
         text: 'Простой таймер (секундомер).'
     },
     {
+        title: 'Пишущая машинка',
+        img: './cards/images/typewriter.png',
+        href: './type-writer/index.html',
+        text: 'Это приложение выбирает случайную цитату из API и выводит ее на экран с эффектом набора на пишущей машинке.'
+    },
+    {
+        title: 'Github-профили',
+        img: './cards/images/github.png',
+        href: 'https://robertd2000.github.io/git-hub-profile-vue/',
+        text: 'Приложение для поиска и просмотра профилей на Github (Vue js).'
+    },
+    {
         title: 'Математика для детей',
         img: './cards/images/math.png',
         href: './math-test/index.html',
@@ -86,10 +99,22 @@ const itemsList = [
         text: 'Генератор картинок.'
     },
     {
-        title: 'Пишущая машинка',
-        img: './cards/images/typewriter.png',
-        href: './type-writer/index.html',
-        text: 'Это приложение выбирает случайную цитату из API и выводит ее на экран с эффектом набора на пишущей машинке.'
+        title: 'Anime App',
+        img: './cards/images/anime.png',
+        href: 'https://robertd2000.github.io/graphql-anime-app/',
+        text: 'React приложение для поиска аниме (инф. о аниме, персонажей и т.д)'
+    },
+    {
+        title: 'Movie App',
+        img: './cards/images/movie.png',
+        href: 'https://robertd2000.github.io/Movies-yts-react-redux/',
+        text: 'React приложение для поиска фильмов (инф. о фильме, комментарии и т.д)'
+    },
+    {
+        title: 'Weather App',
+        img: './cards/images/weather.png',
+        href: 'https://robertd2000.github.io/weather-api-with-redux-tools/',
+        text: 'React приложение для просмтора прогноза погоды'
     },
 ]
 
@@ -121,6 +146,7 @@ const generateCard = (data) => {
 }
 
 const addCards = () => {
+    loader.style.display = 'block'
     itemsList.reverse().forEach(item => {
         let card = generateCard(item)
         card.style.backgroundColor = colorsList[i]
@@ -128,6 +154,7 @@ const addCards = () => {
         i++
         if (i >= colorsList.length) i = 0
     })
+    loader.style.display = 'none'
 }
 
 document.addEventListener('DOMContentLoaded', addCards)
