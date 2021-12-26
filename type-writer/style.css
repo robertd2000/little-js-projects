@@ -1,0 +1,48 @@
+body {
+  font-family: "neuropol_xregular";
+  text-align: center;
+  letter-spacing: 2px;
+  overflow: hidden;
+  background: linear-gradient(0.5turn, #000, #00ffd5, #000);
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote_inner {
+  width: fit-content;
+  margin: auto;
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+span {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1rem;
+  }
+}
